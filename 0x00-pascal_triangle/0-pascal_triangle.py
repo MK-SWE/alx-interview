@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+"""
+pascal_triangle
+a function that create a list of lists to solve pascal's triangle
+"""
 def pascal_triangle(n):
   if n == 1:
     return [[1]]
