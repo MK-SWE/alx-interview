@@ -6,6 +6,7 @@ a function that create a list of lists to solve pascal's triangle
 
 
 def pascal_triangle(n):
+    """Return a list of lists"""
     if n == 1:
         return [[1]]
     elif n <= 0:
