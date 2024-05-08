@@ -6,6 +6,7 @@ from typing import List
 
 
 def minOperations(n: int) -> int:
+    """Return the sum of the prime factors"""
     if n <= 0:
         return 0
     # A list to collect the prime factors
