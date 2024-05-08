@@ -15,8 +15,8 @@ def minOperations(n: int) -> int:
     while n % 2 == 0:
         factors.append(2)
         n //= 2
-    # Now, n must be odd at this point
-    #so we can skip one element (Note i = i + 2)
+    """Now, n must be odd at this point
+    so we can skip one element (Note i = i + 2)"""
     for i in range(3, int(n**0.5) + 1, 2):
         # While i divides n, append i and divide n
         while n % i == 0:
