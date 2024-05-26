@@ -5,4 +5,7 @@
 
 
 def validUTF8(data: any) -> bool:
+    """
+        UTF-8 Validation algorithm
+    """
     pass
