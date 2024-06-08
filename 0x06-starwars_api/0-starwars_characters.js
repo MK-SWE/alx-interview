@@ -3,7 +3,7 @@ const request = require('request');
 const url = 'https://swapi-api.alx-tools.com/api/';
 const movieID = process.argv[2];
 
-function getChar(url, i){
+function getChar (url, i) {
   if (url.length === i) {
     return;
   }
@@ -11,8 +11,8 @@ function getChar(url, i){
     if (error) {
       console.log(error);
     } else {
-      console.log(respone.body.name)
-      getChar(url, i+1)
+      console.log(respone.body.name);
+      getChar(url, i + 1);
     }
   });
 }
@@ -22,6 +22,6 @@ request({ uri: `${url}films/${movieID}`, json: true }, (error, respone) => {
     console.log(error);
   } else {
     const charLst = respone.body.characters;
-    getChar(charLst, 0)
+    getChar(charLst, 0);
   }
 });
