@@ -8,7 +8,7 @@ request({ uri: `${url}films/${movieID}`, json: true }, (error, respone) => {
     console.log(error);
   } else {
     const charLst = respone.body.characters;
-    charLst.forEach(el => {
+    charLst.map(el => {
       request({ url: el, json: true }, (error, respone) => {
         if (error) {
           console.log(error);
