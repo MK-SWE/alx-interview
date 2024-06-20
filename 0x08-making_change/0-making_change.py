@@ -2,7 +2,7 @@
 """
 Make Change
 """
-from typing import List 
+from typing import List
 
 
 def makeChange(coins: List, total: int) -> int:
