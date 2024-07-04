@@ -3,7 +3,6 @@
 isWinner
 determining the winner of a game based on the strategic
 """
-from typing import List
 
 
 def genPrimes(n: int):
